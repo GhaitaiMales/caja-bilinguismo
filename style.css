@@ -67,5 +67,33 @@ button {
   font-size: 1rem;
   cursor: pointer;
 }
+.navbar {
+  background-color: var(--sky-blue);
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover {
+  color: var(--sun-yellow);
+}
 
 
