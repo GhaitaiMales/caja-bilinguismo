@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conceptos Clave – Bilingüismo</title>
+  <title>Explorar el Bilingüuismo</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    .glosario {
+    .concept-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 40px;
     }
-
-    .glosario-item {
+    .concept-card {
       background-color: var(--sun-yellow);
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
-
-    .glosario-item h3 {
-      margin-top: 0;
-      color: var(--deep-red);
+    .concept-card:hover {
+      transform: translateY(-5px);
     }
-
-    .glosario-item p {
-      margin: 0;
+    .concept-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .concept-card h3 {
       color: var(--wine-red);
+      margin-bottom: 10px;
+    }
+    .concept-card p {
+      color: #333;
+      font-size: 0.95rem;
+    }
+    .concept-translation {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: var(--deep-red);
+      margin-top: 8px;
     }
   </style>
 </head>
@@ -45,113 +59,99 @@
   </nav>
 
   <header>
-    <h1>Conceptos Clave del Bilingüismo</h1>
-    <p>Una guía para comprender ideas fundamentales que sustentan la educación bilingüe y los derechos lingüísticos.</p>
+    <h1>Explora el Poder del Bilingüuismo</h1>
+    <p>Descubre ideas que explican por qué el idioma es mucho más que comunicación: es identidad, futuro y posibilidad. </p>
   </header>
 
-  <main class="glosario">
+  <main>
 
-    <div class="glosario-item">
-      <h3>Bilingüismo</h3>
-      <p>Capacidad de comunicarse en dos lenguas, ya sea por competencia o uso frecuente.</p>
-    </div>
+    <section>
+      <h2 style="text-align:center; color: var(--wine-red);">Identidad, poder y decisión lingüística</h2>
+      <div class="concept-container">
 
-    <div class="glosario-item">
-      <h3>Monolingüismo</h3>
-      <p>Uso exclusivo de una sola lengua en la vida cotidiana o profesional.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/inversion.jpg" alt="Niños con identidad cultural">
+          <h3>Inversión</h3>
+          <p>Compromiso personal hacia el aprendizaje de una lengua, influido por su valor social, cultural o económico.</p>
+          <p><strong>Ejemplo:</strong> En Otavalo, el kichwa tiene alto valor cultural. El español también se valora por su utilidad académica.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Inversión (Investment)</h3>
-      <p>Compromiso emocional, social y económico hacia una lengua, motivado por metas personales.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/identidad.jpg" alt="Identidad cultural">
+          <h3>Identidad Imaginada</h3>
+          <p>La versión futura de uno mismo que surge al aprender una nueva lengua.</p>
+          <p><strong>Ejemplo:</strong> Un niño que conserva el kichwa puede verse como líder cultural o defensor de su comunidad.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Comunidad Imaginada</h3>
-      <p>Grupo al que aspiramos pertenecer mediante el aprendizaje de una lengua.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/comunidad.jpg" alt="Comunidad global">
+          <h3>Comunidad Imaginada</h3>
+          <p>Grupo social con el que una persona se identifica al aprender un idioma.</p>
+          <p><strong>Ejemplo:</strong> Jóvenes que aprenden inglés pueden imaginarse como viajeros o emprendedores globales.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Identidad Imaginada</h3>
-      <p>Versión futura de uno mismo que se imagina gracias al dominio de otra lengua.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/sentimental.jpg" alt="Valor emocional">
+          <h3>Valor Sentimental</h3>
+          <p>Vínculo emocional con una lengua, como el kichwa, por ser la lengua de la abuela, de la infancia o del territorio.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Lengua Franca</h3>
-      <p>Lengua común usada entre personas que no comparten lengua materna (como el inglés).</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/instrumental.jpg" alt="Valor instrumental">
+          <h3>Valor Instrumental</h3>
+          <p>Cuando una lengua facilita oportunidades, como el español o el inglés para estudios, trabajo o becas.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Lengua no materna</h3>
-      <p>Idioma aprendido en etapas posteriores a la infancia, fuera del hogar.</p>
-    </div>
+      </div>
+    </section>
 
-    <div class="glosario-item">
-      <h3>Institucionalización</h3>
-      <p>Proceso por el cual una lengua se establece formalmente en instituciones.</p>
-    </div>
+    <section>
+      <h2 style="text-align:center; color: var(--wine-red); margin-top: 50px;">Tipos de bilingüuismo y procesos de aprendizaje</h2>
+      <div class="concept-container">
 
-    <div class="glosario-item">
-      <h3>Legitimación</h3>
-      <p>Reconocimiento que otorga valor y autoridad a una lengua o práctica lingüística.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/bilingue1.jpg" alt="Bilingüe desde pequeño">
+          <h3>Bilingüuismo Simultáneo</h3>
+          <p>Aprender dos lenguas desde la infancia. Kichwa en casa y español en la escuela desde pequeño.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Valor Instrumental</h3>
-      <p>Utilidad práctica de una lengua para acceder a educación, trabajo o servicios.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/bilingue2.jpg" alt="Bilingüuismo secuencial">
+          <h3>Bilingüuismo Secuencial</h3>
+          <p>Aprender una lengua nueva luego de haber dominado otra. Por ejemplo, aprender español tras hablar sólo kichwa en casa.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Valor Sentimental</h3>
-      <p>Vínculo emocional con una lengua por razones familiares o comunitarias.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/adquisicion.jpg" alt="Aprendizaje natural">
+          <h3>Adquisición de Lengua</h3>
+          <p>Aprender un idioma de forma natural, sin clases. Por ejemplo, aprendiendo kichwa de la familia en la vida diaria.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Autonomía Lingüística</h3>
-      <p>Capacidad de decidir sobre el uso y enseñanza de una lengua en una comunidad.</p>
-    </div>
+        <div class="concept-card">
+          <img src="images/aprendizaje.jpg" alt="Aprendizaje formal">
+          <h3>Aprendizaje de Lengua</h3>
+          <p>Estudio consciente del idioma con tareas, gramática y materiales escolares. Común para el español o inglés.</p>
+          <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
+        </div>
 
-    <div class="glosario-item">
-      <h3>Cambio de código (Code-switching)</h3>
-      <p>Alternancia entre dos o más lenguas en una conversación o frase.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Translanguaging</h3>
-      <p>Uso flexible del repertorio lingüístico completo para construir sentido, sin separar lenguas.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Derechos lingüísticos</h3>
-      <p>Derecho a usar, enseñar y heredar una lengua, especialmente en educación y gobierno.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Bilingüismo Simultáneo</h3>
-      <p>Aprendizaje de dos lenguas desde la infancia, usualmente en hogares bilingües.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Adquisición de Lengua</h3>
-      <p>Proceso inconsciente y natural de aprender una lengua mediante interacción cotidiana.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Bilingüismo Secuencial</h3>
-      <p>Aprendizaje de una segunda lengua luego de haber establecido la primera.</p>
-    </div>
-
-    <div class="glosario-item">
-      <h3>Aprendizaje de Lengua</h3>
-      <p>Estudio consciente y formal de una lengua, generalmente en contextos escolares.</p>
-    </div>
+      </div>
+    </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 Equipo Bilingüismo – Liberarte con tu lengua</p>
+    <p>&copy; 2025 Equipo Bilingüuismo</p>
   </footer>
 
 </body>
 </html>
+
 
