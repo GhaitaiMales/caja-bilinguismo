@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Caja de Herramientas – Bilingüismo y Kichwa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    :root {
+      --sun-yellow: #F7C62A;
+      --sky-blue: #43B5DB;
+      --deep-red: #A41A02;
+      --orange-flame: #FA5C00;
+      --wine-red: #931300;
+      --soft-beige: #EFE5DC;
+      --light-wood: #D7C3A1;
+      --deep-wood: #7A5C43;
+      --sage-green: #A6B89A;
+      --warm-gray: #DAD2C5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--soft-beige);
+      margin: 0;
+      padding: 0;
+    }
+
     .intro-container {
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
-      font-family: 'Poppins', sans-serif;
       line-height: 1.7;
     }
+
     .section-box {
-      background-color: #ffffffb6;
+      background-color: white;
       border-left: 6px solid var(--sky-blue);
       border-radius: 8px;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
+
     .section-box h2 {
-      color: var(--deep-red);
+      color: var(--deep-wood);
       margin-top: 0;
     }
+
     .popup-term {
       color: var(--orange-flame);
       cursor: pointer;
       text-decoration: underline;
     }
+
     .kichwa-translation {
       margin-top: 0.5rem;
       font-style: italic;
-      color: #444;
+      color: #555;
     }
+
     .highlight {
-      background-color: #fff3cd;
+      background-color: var(--sun-yellow);
       padding: 0.2em 0.5em;
       border-radius: 4px;
+    }
+
+    .section-explora {
+      background-color: var(--sage-green);
+      color: white;
+    }
+
+    .section-explora h2 {
+      color: white;
+    }
+
+    .navbar {
+      background-color: var(--wine-red);
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      text-align: center;
+      background-color: var(--light-wood);
+      padding: 30px 20px;
+      color: var(--deep-wood);
+    }
+
+    footer {
+      background-color: var(--warm-gray);
+      text-align: center;
+      padding: 1rem;
+      color: #333;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -79,23 +147,24 @@
       <p class="kichwa-translation">(Espacio para traducción en kichwa aquí)</p>
     </section>
 
-    <section class="section-box" style="background-color: var(--orange-light);">
+    <section class="section-box section-explora">
       <h2>¡Explora, reflexiona, decide!</h2>
       <p>¿Te han dicho que el kichwa no sirve para nada? ¿Que te confundes si hablas dos idiomas? ¿Que si enseñas kichwa a tu hijo no aprenderá bien el español?</p>
       <p>Te invitamos a recorrer esta <strong>caja de herramientas</strong>, donde:</p>
       <ul>
         <li>Desmontamos los mitos con evidencia.</li>
-        <li>Explicamos conceptos clave de bilingüuismo.</li>
+        <li>Explicamos conceptos clave del bilingüismo.</li>
         <li>Mostramos buenas prácticas reales.</li>
         <li>Informamos sobre tus derechos lingüísticos.</li>
       </ul>
+      <p><strong>Además:</strong> La planificación PDF de cada metodología incluye ideas claras y específicas de cómo aplicarlas en el aula, con sustento teórico.</p>
       <p><strong>¡Toma el control de tu idioma y tu futuro!</strong></p>
     </section>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 Equipo Bilingüuismo</p>
+    <p>&copy; 2025 Equipo Bilingüismo – Liberarte con tu lengua</p>
   </footer>
 
 </body>
