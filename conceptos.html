@@ -3,16 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Explorar el Bilingüuismo</title>
+  <title>Explorar el Bilingüismo</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    :root {
+      --sun-yellow: #F7C62A;
+      --sky-blue: #43B5DB;
+      --deep-red: #A41A02;
+      --orange-flame: #FA5C00;
+      --wine-red: #931300;
+      --soft-beige: #EFE5DC;
+      --light-wood: #D7C3A1;
+      --deep-wood: #7A5C43;
+      --sage-green: #A6B89A;
+      --warm-gray: #DAD2C5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--soft-beige);
+    }
+
+    .navbar {
+      background-color: var(--wine-red);
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      background-color: var(--light-wood);
+      text-align: center;
+      padding: 2rem;
+      color: var(--deep-wood);
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
     .concept-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 30px;
-      padding: 40px;
+      margin-top: 2rem;
     }
+
     .concept-card {
       background-color: var(--sun-yellow);
       border-radius: 12px;
@@ -20,29 +77,43 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
+
     .concept-card:hover {
       transform: translateY(-5px);
     }
+
     .concept-card img {
       width: 100%;
-      height: 200px;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
+      background-color: var(--warm-gray);
     }
+
     .concept-card h3 {
       color: var(--wine-red);
       margin-bottom: 10px;
     }
+
     .concept-card p {
       color: #333;
       font-size: 0.95rem;
     }
+
     .concept-translation {
       font-style: italic;
       font-size: 0.9rem;
       color: var(--deep-red);
       margin-top: 8px;
+    }
+
+    footer {
+      background-color: var(--warm-gray);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
     }
   </style>
 </head>
@@ -59,8 +130,8 @@
   </nav>
 
   <header>
-    <h1>Explora el Poder del Bilingüuismo</h1>
-    <p>Descubre ideas que explican por qué el idioma es mucho más que comunicación: es identidad, futuro y posibilidad. </p>
+    <h1>Explora el Poder del Bilingüismo</h1>
+    <p>Descubre ideas que explican por qué el idioma es mucho más que comunicación: es identidad, futuro y posibilidad.</p>
   </header>
 
   <main>
@@ -111,19 +182,19 @@
     </section>
 
     <section>
-      <h2 style="text-align:center; color: var(--wine-red); margin-top: 50px;">Tipos de bilingüuismo y procesos de aprendizaje</h2>
+      <h2 style="text-align:center; color: var(--wine-red); margin-top: 50px;">Tipos de bilingüismo y procesos de aprendizaje</h2>
       <div class="concept-container">
 
         <div class="concept-card">
           <img src="images/bilingue1.jpeg" alt="Bilingüe desde pequeño">
-          <h3>Bilingüuismo Simultáneo</h3>
+          <h3>Bilingüismo Simultáneo</h3>
           <p>Aprender dos lenguas desde la infancia. Kichwa en casa y español en la escuela desde pequeño.</p>
           <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
         </div>
 
         <div class="concept-card">
-          <img src="images/bilingue2.jpeg" alt="Bilingüuismo secuencial">
-          <h3>Bilingüuismo Secuencial</h3>
+          <img src="images/bilingue2.jpeg" alt="Bilingüismo secuencial">
+          <h3>Bilingüismo Secuencial</h3>
           <p>Aprender una lengua nueva luego de haber dominado otra. Por ejemplo, aprender español tras hablar sólo kichwa en casa.</p>
           <p class="concept-translation">[Espacio para traducción en Kichwa]</p>
         </div>
@@ -148,10 +219,11 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Equipo Bilingüuismo</p>
+    <p>&copy; 2025 Equipo Bilingüismo</p>
   </footer>
 
 </body>
 </html>
+
 
 
