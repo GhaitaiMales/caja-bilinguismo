@@ -6,8 +6,111 @@
   <title>Mitos sobre el Kichwa</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    :root {
+      --sun-yellow: #F7C62A;
+      --sky-blue: #43B5DB;
+      --deep-red: #A41A02;
+      --orange-flame: #FA5C00;
+      --wine-red: #931300;
+      --soft-beige: #EFE5DC;
+      --light-wood: #D7C3A1;
+      --deep-wood: #7A5C43;
+      --sage-green: #A6B89A;
+      --warm-gray: #DAD2C5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--soft-beige);
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: var(--wine-red);
+      padding: 10px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      background-color: var(--light-wood);
+      text-align: center;
+      padding: 2rem;
+      color: var(--deep-wood);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    .myth-section {
+      margin-bottom: 40px;
+      background-color: white;
+      border-left: 6px solid var(--sky-blue);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    .myth-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .myth-content.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .myth-image img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      background-color: var(--warm-gray);
+    }
+
+    .myth-text h2 {
+      color: var(--deep-red);
+      margin-top: 0;
+    }
+
+    .myth-text p {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    footer {
+      background-color: var(--warm-gray);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
+
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -81,7 +184,7 @@
       </div>
     </section>
 
-    <!-- Mito 5: Realidad local -->
+    <!-- Mito 5 -->
     <section class="myth-section">
       <div class="myth-content">
         <div class="myth-image">
@@ -102,5 +205,6 @@
   </footer>
 </body>
 </html>
+
 
 
