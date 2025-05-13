@@ -1,56 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lenguas con Derecho – Bilingüismo</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    :root {
+      --sun-yellow: #F7C62A;
+      --sky-blue: #43B5DB;
+      --deep-red: #A41A02;
+      --orange-flame: #FA5C00;
+      --wine-red: #931300;
+      --soft-beige: #EFE5DC;
+      --light-wood: #D7C3A1;
+      --deep-wood: #7A5C43;
+      --sage-green: #A6B89A;
+      --warm-gray: #DAD2C5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--soft-beige);
+    }
+
+    .navbar {
+      background-color: var(--wine-red);
+      padding: 12px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      background-color: var(--sky-blue);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
     .contenido {
       max-width: 880px;
       margin: 0 auto;
-      padding: 30px;
+      padding: 40px 20px;
     }
 
     .tarjeta-derecho {
-      background-color: var(--sky-blue);
       border-radius: 12px;
       padding: 24px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       margin: 30px auto;
-      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .tarjeta-derecho:nth-child(odd) {
+      background-color: var(--sage-green);
+      border-left: 6px solid var(--sky-blue);
+      color: #fff;
+    }
+
+    .tarjeta-derecho:nth-child(even) {
+      background-color: var(--soft-beige);
+      border-left: 6px solid var(--wine-red);
+      color: #333;
     }
 
     .tarjeta-derecho h3 {
       margin-top: 0;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+      color: var(--deep-wood);
     }
 
-    .tarjeta-derecho p {
-      font-size: 1rem;
-      line-height: 1.6;
+    .tarjeta-derecho:nth-child(odd) h3 {
+      color: white;
     }
 
     .destacado {
-      background-color: var(--orange-light);
-      padding: 16px;
-      border-left: 5px solid var(--orange-deep);
-      margin-bottom: 20px;
+      background-color: var(--sun-yellow);
+      padding: 20px;
+      border-left: 6px solid var(--deep-red);
+      margin-bottom: 30px;
       border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    }
+
+    .destacado p {
+      margin: 0;
+      font-size: 1.05rem;
+      color: #333;
     }
 
     .subtitulo {
       color: var(--wine-red);
       font-weight: bold;
       font-size: 1.2rem;
-      margin-top: 40px;
+      margin-top: 50px;
     }
 
-    .traduccion {
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    footer {
+      background-color: var(--deep-red);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .frase-final {
+      text-align: center;
       font-style: italic;
-      color: #f5f5f5;
-      margin-top: 8px;
+      color: var(--deep-red);
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -84,7 +161,7 @@
 
     <div class="tarjeta-derecho">
       <h3>2. Derecho a informarte y decidir</h3>
-      <p>Las familias deben tener acceso a información clara sobre el bilingüuismo, sus beneficios y sus oportunidades (como becas o materiales educativos).</p>
+      <p>Las familias deben tener acceso a información clara sobre el bilingüismo, sus beneficios y sus oportunidades (como becas o materiales educativos).</p>
     </div>
 
     <div class="tarjeta-derecho">
@@ -102,8 +179,7 @@
       <p>Las comunidades tienen derecho a decidir cómo se usa, transmite y enseña su idioma. Esto significa crear escuelas propias, diseñar materiales, formar docentes, etc.</p>
     </div>
 
-    <p class="subtitulo">✨ Otros conceptos clave para comprender tus derechos:
-    </p>
+    <p class="subtitulo">✨ Otros conceptos clave para comprender tus derechos:</p>
 
     <div class="tarjeta-derecho">
       <h3>Legitimación</h3>
@@ -127,16 +203,17 @@
       <li>Hay leyes y recursos que puedes usar para fortalecerla.</li>
     </ul>
 
-    <p style="text-align:center; font-style: italic; color: var(--deep-red); margin-top: 40px;">Las lenguas no mueren solas, se dejan morir. Pero también se pueden hacer vivir.</p>
+    <p class="frase-final">Las lenguas no mueren solas, se dejan morir. Pero también se pueden hacer vivir.</p>
     <p style="text-align:center; margin-top: 20px; color: #555;"><em>🌱 Versión en kichwa próximamente</em></p>
 
   </main>
 
   <footer>
-    <p>&copy; 2025 Equipo Bilingüuismo – Liberarte con tu lengua</p>
+    <p>&copy; 2025 Equipo Bilingüismo – Liberarte con tu lengua</p>
   </footer>
 
 </body>
 </html>
+
 
 
