@@ -9,6 +9,11 @@
   --deep-wood: #7A5C43;
   --sage-green: #A6B89A;
   --warm-gray: #DAD2C5;
+  --misty-wood: #F4F1ED;       /* Fondo tipo blanco madera */
+  --sage-fog: #E6F0EA;         /* Verde salvia muy pálido */
+  --birch-blush: #F2EFEA;      /* Tono neutro gris-beige claro */
+  --aqua-pale: #E7F5F8;        /* Azul pálido fresco */
+  --green-wine: #4A5A44;       /* Verde oscuro elegante tipo vino
 }
 
 body {
