@@ -6,8 +6,139 @@
   <title>¿Cómo aprender bien dos idiomas?</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sun-yellow: #F7C62A;
+      --sky-blue: #43B5DB;
+      --deep-red: #A41A02;
+      --orange-flame: #FA5C00;
+      --wine-red: #931300;
+      --soft-beige: #EFE5DC;
+      --light-wood: #D7C3A1;
+      --deep-wood: #7A5C43;
+      --sage-green: #A6B89A;
+      --warm-gray: #DAD2C5;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: var(--soft-beige);
+    }
+
+    .navbar {
+      background-color: var(--wine-red);
+      padding: 12px 0;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header {
+      background-color: var(--sky-blue);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .practice-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .practice-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .practice-img {
+      flex: 1 1 300px;
+      max-width: 300px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .practice-text {
+      flex: 2;
+    }
+
+    .practice-text h2 {
+      color: var(--wine-red);
+      margin-top: 0;
+    }
+
+    .practice-text p {
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .kichwa-placeholder {
+      font-style: italic;
+      color: var(--deep-red);
+    }
+
+    .lesson-plan-section {
+      background-color: var(--light-wood);
+      padding: 40px 20px;
+      border-radius: 12px;
+      margin: 40px auto;
+      max-width: 900px;
+    }
+
+    .lesson-plan-section h2 {
+      text-align: center;
+      color: var(--wine-red);
+    }
+
+    .lesson-plan-section ul {
+      line-height: 1.8;
+      padding-left: 1.2rem;
+      color: #333;
+    }
+
+    .lesson-plan-section p {
+      line-height: 1.7;
+      color: #333;
+    }
+
+    #example-plan {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    footer {
+      background-color: var(--deep-red);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
+
   <nav class="navbar">
     <ul>
       <li><a href="index.html">Inicio</a></li>
@@ -18,80 +149,93 @@
     </ul>
   </nav>
 
-  <header style="background-color: var(--sky-blue); color: white; padding: 40px 20px; text-align: center;">
+  <header>
     <h1>¿Cómo aprender bien dos idiomas?</h1>
     <p>Herramientas para fortalecer tanto el kichwa como el español sin dejar uno atrás.</p>
   </header>
 
   <main>
-    <section class="practice-grid">
-      <div class="practice-box">
-        <img src="images/codeswiching.jpeg" alt="Code-switching" class="practice-img">
+
+    <!-- BLOQUES DE PRÁCTICAS -->
+
+    <div class="practice-block">
+      <img src="images/codeswiching.jpeg" alt="Code-switching" class="practice-img">
+      <div class="practice-text">
         <h2>Cambio de Código (Code-switching)</h2>
         <p>El niño alterna entre dos idiomas en una conversación. Se enseña cada idioma como sistema separado, con la meta de desarrollar competencias diferenciadas.</p>
         <p><strong>Ejemplo:</strong> “Ñañagu vamos mercadoman”.</p>
         <p class="kichwa-placeholder">[Espacio para traducción en kichwa]</p>
       </div>
+    </div>
 
-      <div class="practice-box">
-        <img src="images/translanguaging.jpeg" alt="Translanguaging" class="practice-img">
+    <div class="practice-block">
+      <img src="images/translanguaging.jpeg" alt="Translanguaging" class="practice-img">
+      <div class="practice-text">
         <h2>Translanguaging</h2>
         <p>El estudiante usa todos sus recursos lingüísticos como un solo sistema flexible. El enfoque no separa idiomas, sino que mejora ambos como un solo repertorio comunicativo.</p>
         <p><strong>Ejemplo:</strong> Un niño usa sin esfuerzo kichwa y español según lo que quiere expresar, sin preocuparse por cuál idioma está usando.</p>
         <p class="kichwa-placeholder">[Espacio para traducción en kichwa]</p>
       </div>
+    </div>
 
-      <div class="practice-box">
-        <img src="images/lenguafranca.jpeg" alt="Lengua Franca" class="practice-img">
+    <div class="practice-block">
+      <img src="images/lenguafranca.jpeg" alt="Lengua Franca" class="practice-img">
+      <div class="practice-text">
         <h2>Lengua Franca</h2>
         <p>Idioma que se usa para facilitar la comunicación entre personas con diferentes lenguas maternas. En Otavalo, el español cumple esta función en espacios institucionales.</p>
         <p><strong>Ejemplo:</strong> En una reunión comunitaria entre kichwahablantes y personas de otras regiones del Ecuador, el español es la lengua común.</p>
         <p class="kichwa-placeholder">[Espacio para traducción en kichwa]</p>
       </div>
+    </div>
 
-      <div class="practice-box">
-        <img src="images/materna.jpg" alt="Lengua Materna" class="practice-img">
+    <div class="practice-block">
+      <img src="images/materna.jpg" alt="Lengua Materna" class="practice-img">
+      <div class="practice-text">
         <h2>Lengua Materna</h2>
         <p>Idioma aprendido desde la infancia en el entorno familiar. Es la base del pensamiento y la identidad.</p>
         <p><strong>Ejemplo:</strong> Para muchas familias otavaleñas, el kichwa es la lengua materna que transmite amor, respeto y sabiduría ancestral.</p>
         <p class="kichwa-placeholder">[Espacio para traducción en kichwa]</p>
       </div>
+    </div>
+
+    <!-- PLANIFICACIÓN DE EJEMPLO -->
+
+    <section class="lesson-plan-section">
+      <h2>¿Cómo se diseñó esta clase bilingüe?</h2>
+      <p>
+        Esta planificación está pensada para demostrar que sí es posible aprender bien kichwa y español, con estrategias que valoran ambas lenguas y hacen que los estudiantes participen activamente. Se usaron varias <strong>mejores prácticas</strong> comprobadas:
+      </p>
+      <ul>
+        <li><strong>✔ Partir del contexto real del estudiante:</strong> Se trabajó con temas cotidianos del entorno rural como los animales, para conectar lo aprendido con su propia vida.</li>
+        <li><strong>✔ Uso del translanguaging:</strong> El kichwa y el español se usan juntos para construir sentido y fortalecer la identidad sin barreras.</li>
+        <li><strong>✔ Enseñanza gradual:</strong> El docente guía paso a paso hasta que el estudiante pueda expresarse con autonomía.</li>
+        <li><strong>✔ Actividades multisensoriales:</strong> Se usan imágenes, movimiento, sonidos y escritura para apoyar diferentes formas de aprender.</li>
+        <li><strong>✔ Aprendizaje activo y colaborativo:</strong> La clase se construye entre todos: hablando, escribiendo, jugando, reflexionando.</li>
+      </ul>
+      <p style="text-align: center; font-style: italic; color: var(--deep-red); margin-top: 20px;">
+        Esta planificación demuestra que enseñar kichwa y español juntos no es un obstáculo, ¡es una oportunidad para aprender mejor!
+      </p>
+      <p style="text-align: center; margin-top: 30px; color: #555;"><em>🌱 Versión en kichwa próximamente</em></p>
     </section>
 
-    <section class="lesson-plan-section" style="background-color: var(--orange-light); padding: 40px 20px; border-radius: 12px; margin: 40px auto; max-width: 900px;">
-  <h2 style="text-align:center; color: var(--wine-red);">¿Cómo se diseñó esta clase bilingüe?</h2>
-  <p style="line-height: 1.7; color: #333;">
-    Esta planificación está pensada para demostrar que sí es posible aprender bien kichwa y español, con estrategias que valoran ambas lenguas y hacen que los estudiantes participen activamente. Se usaron varias <strong>mejores prácticas</strong> comprobadas:
-  </p>
-  <ul style="line-height: 1.8;">
-    <li><strong>✔ Partir del contexto real del estudiante:</strong> Se trabajó con temas cotidianos del entorno rural como los animales, para conectar lo aprendido con su propia vida.</li>
-    <li><strong>✔ Uso del translanguaging:</strong> El kichwa y el español se usan juntos para construir sentido y fortalecer la identidad sin barreras.</li>
-    <li><strong>✔ Enseñanza gradual:</strong> El docente guía paso a paso hasta que el estudiante pueda expresarse con autonomía.</li>
-    <li><strong>✔ Actividades multisensoriales:</strong> Se usan imágenes, movimiento, sonidos y escritura para apoyar diferentes formas de aprender.</li>
-    <li><strong>✔ Aprendizaje activo y colaborativo:</strong> La clase se construye entre todos: hablando, escribiendo, jugando, reflexionando.</li>
-  </ul>
-  <p style="text-align: center; font-style: italic; color: var(--deep-red); margin-top: 20px;">
-    Esta planificación demuestra que enseñar kichwa y español juntos no es un obstáculo, ¡es una oportunidad para aprender mejor!
-  </p>
-  <p style="text-align: center; margin-top: 30px; color: #555;"><em>🌱 Versión en kichwa próximamente</em></p>
-</section>
-    
-<section id="example-plan" class="section-flex" style="text-align: center; margin-top: 40px;">
-  <div class="section-text">
-    <h2 style="color: var(--sky-blue);">🌿 Ver Planificación de Clase</h2>
-    <a href="pdf/plan-clase-translanguaging.pdf" class="document-link" target="_blank" style="text-decoration: none;">
-      <img src="images/doc.png" alt="Documento PDF" style="width: 100px; margin-bottom: 10px;">
-      <p style="font-weight: bold; color: var(--orange-flame);">Haz clic aquí para descargar</p>
-    </a>
-  </div>
-</section>
+    <section id="example-plan" class="section-flex">
+      <div class="section-text">
+        <h2 style="color: var(--sky-blue);">🌿 Ver Planificación de Clase</h2>
+        <a href="pdf/plan-clase-translanguaging.pdf" class="document-link" target="_blank" style="text-decoration: none;">
+          <img src="images/doc.png" alt="Documento PDF" style="width: 100px; margin-bottom: 10px;">
+          <p style="font-weight: bold; color: var(--orange-flame);">Haz clic aquí para descargar</p>
+        </a>
+      </div>
+    </section>
 
   </main>
 
-  <footer style="background-color: var(--deep-red); color: white; text-align: center; padding: 20px;">
+  <footer>
     <p>&copy; 2025 Equipo Bilingüismo – Liberarte con tu lengua</p>
   </footer>
+
 </body>
 </html>
+
 
 
